@@ -2,9 +2,9 @@ import "../css/popup.css";
 import connect from "./popup/connect";
 import disconnect from "./popup/disconnect";
 
-chrome.proxy.settings.get({'incognito': false},
-    function(config) {
-        if (config.value.mode === "system") {
+chrome.proxy.settings.get({'incognito': false}, (config) => {
+        console.log(config)
+        if (config.value.mode != "fixed_servers") {
             document.getElementById("status").textContent = "Disconnected";
             document.getElementById('socks5connect').textContent = 'Connect'
             document.getElementById('socks5connect').addEventListener('click', connect);

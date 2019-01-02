@@ -7,7 +7,7 @@ export default function () {
       singleProxy: {
         scheme: "socks5",
         host: "99.228.185.251",
-        port: 1080
+        port: 1081
       }
     }
   };
