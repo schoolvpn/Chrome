@@ -1,6 +1,6 @@
 {
-  "name": "schoolvpn extension",
-  "version":"1.0.1",
+  "name": "SchoolVPN Extension",
+  "version":"1.0.2",
   "options_page": "options.html",
   "permissions": [
     "proxy",
@@ -12,7 +12,8 @@
     "webRequestBlocking"
   ],
   "background": {
-    "page": "background.html"
+    "page": "background.html",
+    "scripts": ["background.js"]
   },
   "browser_action": {
     "default_popup": "popup.html",
